@@ -35,11 +35,11 @@ impl Move {
     }
     fn get_outcome_against(self, opponent: Self) -> usize {
         if self == opponent {
-            return 3;
+            3
         } else if self.get_winning_against() == opponent {
-            return 6;
+            6
         } else {
-            return 0;
+            0
         }
     }
     fn get_score_for_shape(self) -> usize {
